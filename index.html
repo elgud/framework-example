@@ -6,14 +6,16 @@
 
     <!-- link to bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <!-- own css -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- own css, but this is no longer needed so commented out 
+        Bootstrap has removed the need to have a separate css file for responsiveness and
+        basic styling. 
+    <link rel="stylesheet" type="text/css" href="style.css" /> -->
     <title>Visit Malaysian Coral Reefs</title>
 </head>
 <body>
-    <header>
-        <h1>Visit Malaysian Coral Reefs</h1>
-        <div class="container-fluid p-0">
+    <header class="p-30 pb-5">
+        <h1 class="pb-2 pt-2 text-center">Visit Malaysian Coral Reefs</h1>
+        <div class="container-fluid">
         <!-- carousel code from getbootstrap.com/docs/5.0/components/carousel -->
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner ratio ratio-16x9">
@@ -38,37 +40,52 @@
             </div>
         </div>
     </header>
-    <main>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Quia laudantium distinctio, quod illum, deserunt nostrum modi, 
-            eum assumenda aperiam non obcaecati? Ea minima asperiores 
-            unde inventore eveniet optio, quisquam maiores?</p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJy2r7MYyGM" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsa, 
-            laboriosam quos sunt rerum totam cumque provident, unde asperiores 
-            maiores, aut vero temporibus velit ex eum. Expedita veniam eligendi 
-            sed.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <main>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quia laudantium distinctio, quod illum, deserunt nostrum modi, 
+                        eum assumenda aperiam non obcaecati? Ea minima asperiores 
+                        unde inventore eveniet optio, quisquam maiores?</p>
+                    
+                    <div class="ratio ratio-16x9 mb-3">
+                        <iframe src="https://www.youtube.com/embed/ZJy2r7MYyGM" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis illo 
-            explicabo sapiente, iusto quae, provident dolore vero maxime quia ipsam 
-            or cum laudantium nihil nisi, esse similique ut blanditiis sit?</p>
-    </main>
-    <aside>
-        <p><strong>Next Departure Dates</strong><p>
-            <ul class="list=group">
-                <li class="list-group-item">26th February 2021</li>
-                <li class="list-group-item">13th March 2021</li>
-                <li class="list-group-item">27th March 2021</li>
-                <li class="list-group-item">10th April 2021</li>
-            </ul>
-        
-    </aside>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsa, 
+                        laboriosam quos sunt rerum totam cumque provident, unde asperiores 
+                        maiores, aut vero temporibus velit ex eum. Expedita veniam eligendi 
+                        sed.</p>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis illo 
+                        explicabo sapiente, iusto quae, provident dolore vero maxime quia ipsam 
+                        or cum laudantium nihil nisi, esse similique ut blanditiis sit?</p>
+                </main>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <aside>
+                    <p class="fs-4">Next Departure Dates</p>
+                        <ul class="list=group">
+                            <li class="list-group-item">10th April 2021</li>
+                            <li class="list-group-item">24th April 2021</li>
+                            <li class="list-group-item">8th May 2021</li>
+                            <li class="list-group-item">22nd May 2021</li>
+                            <li class="list-group-item">5th June 2021</li>
+                            <li class="list-group-item">19th June 2021</li>
+                            <li class="list-group-item">3rd July 2021</li>
+                        </ul>                    
+                </aside>
+            </div>
+        </div>
+    </div>
+    <hr>
     <footer>
-        <p>&copy; 2020</p>
+        <p class="text-center">&copy; 2020 elgud.github.io</p>
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
