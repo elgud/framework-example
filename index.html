@@ -8,34 +8,35 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <!-- own css -->
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Document</title>
+    <title>Visit Malaysian Coral Reefs</title>
 </head>
 <body>
     <header>
         <h1>Visit Malaysian Coral Reefs</h1>
-
+        <div class="container-fluid p-0">
         <!-- carousel code from getbootstrap.com/docs/5.0/components/carousel -->
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/coral.jpg" class="d-block w-100" alt="Some coral">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/coral2.jpg" class="d-block w-100" alt="Some colourful coral">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/fish3.jpg" class="d-block w-100" alt="Some fish">
-              </div>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner ratio ratio-16x9">
+                <div class="carousel-item active">
+                    <img src="assets/coral.jpg"  class="d-block w-100" alt="Some coral">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/coral2.jpg"  class="d-block w-100" alt="Some colourful coral">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/fish3.jpg"  class="d-block w-100" alt="Some fish">
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </a>
-          </div>
+        </div>
     </header>
     <main>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -58,11 +59,11 @@
     </main>
     <aside>
         <p><strong>Next Departure Dates</strong><p>
-            <ul>
-                <li>26th February 2021</li>
-                <li>13th March 2021</li>
-                <li>27th March 2021</li>
-                <li>10th April 2021</li>
+            <ul class="list=group">
+                <li class="list-group-item">26th February 2021</li>
+                <li class="list-group-item">13th March 2021</li>
+                <li class="list-group-item">27th March 2021</li>
+                <li class="list-group-item">10th April 2021</li>
             </ul>
         
     </aside>
